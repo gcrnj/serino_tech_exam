@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Serino Tech Exam</string>
+    <string name="product_image">Product Image</string>
+
+    <string name="server_url">https://dummyjson.com/</string>
+
+    <string name="with_peso_sign">₱%1$s</string>
+
+    <string name="no_product_title">No Product Found</string>
+    <string name="no_product_message">We are sorry. The product that you are looking for cannot be found. Come back again later to check for updates. Thank you</string>
+    <string name="no_image_title">No Image Found</string>
+    <string name="no_image_message">We are sorry. The image that you are looking for cannot be found. Come back again later to check for updates. Thank you</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="product_title">Product title</string>
+    <string name="rating">Rating:</string>
+    <string name="items_left">Items Left</string>
+    <string name="category">Category</string>
+    <string name="brand">Brand</string>
+    <string name="description">Description</string>
+    <string name="rating_with_denominator">%1$s/%2$s</string>
+    <string name="product_gallery">Product Gallery</string>
+</resources>

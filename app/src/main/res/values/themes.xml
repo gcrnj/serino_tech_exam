@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SerinoTechExam" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/my_blue</item>
+        <item name="colorPrimaryVariant">@color/my_blue_darker</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/my_orange_light</item>
+        <item name="colorSecondaryVariant">@color/my_orange_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+    </style>
+
+    <style name="Theme.SerinoTechExamNoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/my_blue</item>
+        <item name="colorPrimaryVariant">@color/my_blue_darker</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/my_orange_light</item>
+        <item name="colorSecondaryVariant">@color/my_orange_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+    </style>
+
+    <style name="Theme.MyTitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+    </style>
+
+    <style name="Theme.MyTitleLargeBold" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MyBodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+    </style>
+
+    <style name="Theme.MyTitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+    </style>
+
+    <style name="Theme.MyTitleMediumBold" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MyTitleSmallBold" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MyBodySmallBold" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MyBodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+    </style>
+
+    <style name="Theme.MyBodyLargeBold" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/baloo_bhai_2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imgProduct"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/my_background_white"
+            android:contentDescription="@string/product_image"
+            android:src="@drawable/android"
+            android:transitionName="@string/product_image"
+            app:round="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/Theme.MyTitleLargeBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@id/txtPrice"
+            android:layout_toEndOf="@id/imgProduct"
+            android:textStyle="bold"
+            android:transitionName="@string/product_title"
+            tools:text="iPhone X" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDescription"
+            style="@style/Theme.MyBodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@id/txtPriceDiscount"
+            android:layout_toEndOf="@id/imgProduct"
+            tools:text="Description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPrice"
+            style="@style/Theme.MyTitleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/price_background"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            tools:text="P549" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPriceDiscount"
+            style="@style/Theme.MyTitleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:paddingHorizontal="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            tools:text="From 549" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

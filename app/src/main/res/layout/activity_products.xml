@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductsActivity">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/layout_product_view" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeSkeletonLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/skeletonImgProduct"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/product_image"
+                    tools:src="@color/black" />
+
+                <ImageView
+                    android:id="@+id/skeletonImgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:layout_toStartOf="@id/skeletonImgPrice"
+                    android:layout_toEndOf="@id/skeletonImgProduct"
+                    tools:src="@color/black" />
+
+                <ImageView
+                    android:id="@+id/skeletonImgDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/skeletonImgTitle"
+                    android:layout_margin="5dp"
+                    android:layout_toStartOf="@id/skeletonImgPrice"
+                    android:layout_toEndOf="@id/skeletonImgProduct"
+                    tools:src="@color/black" />
+
+                <ImageView
+                    android:id="@+id/skeletonImgPrice"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    tools:src="@color/black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
