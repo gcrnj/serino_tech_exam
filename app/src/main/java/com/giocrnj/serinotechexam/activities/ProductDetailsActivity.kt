@@ -2,6 +2,7 @@ package com.giocrnj.serinotechexam.activities
 
 import android.app.AlertDialog
 import android.content.DialogInterface
+import android.content.Intent
 import android.graphics.Paint
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -102,6 +103,13 @@ class ProductDetailsActivity : BaseActivity() {
         binding.txtStock.text = product.stock.toString()
         binding.txtCategory.text = product.category
         binding.txtBrand.text = product.brand
+
+        //set click listener
+        binding.imgProduct.setOnClickListener {
+            val fullImageIntent = Intent(this, FullScreenImageActivity::class.java)
+            fullImageIntent.putExtra(Constants.IMAGE_KEY, product.thumbnail)
+            startActivity(fullImageIntent)
+        }
     }
 
     private fun alertNoProductFound() {
